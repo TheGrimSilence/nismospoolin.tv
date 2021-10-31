@@ -170,6 +170,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@headlessui/react@npm:1.4.1"
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: e036941e31b02a17e8c27b018d40cced1e7165ec85ce00cddf74884349e86cb7ef75e3c645d7d0f133f63dfbac97ad4a5765d996db3b8f3cc4a678c84402ad6e
+  languageName: node
+  linkType: hard
+
+"@heroicons/react@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@heroicons/react@npm:1.0.5"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 12114af19c17f69140cc7338e4cd12fe38098ad3ed79f02762106160655cde3ebdba58a2b26f1067f720786187364fd9465bc72f02aad85b0ead8172d76aa51d
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.5.0":
   version: 0.5.0
   resolution: "@humanwhocodes/config-array@npm:0.5.0"
@@ -4011,6 +4030,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nismospoolin.tv@workspace:."
   dependencies:
+    "@headlessui/react": ^1.4.1
+    "@heroicons/react": ^1.0.5
     "@types/node": 16.11.6
     "@types/react": 17.0.33
     "@yarnpkg/pnpify": ^3.1.1-rc.1

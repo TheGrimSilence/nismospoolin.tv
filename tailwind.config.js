@@ -5,7 +5,12 @@ module.exports = {
 		fontFamily: {
 			roboto: ['Roboto'],
 		},
-		extend: {},
+
+		extend: {
+			maxWidth: {
+				'8xl': '90rem',
+			},
+		},
 	},
 	variants: {
 		extend: {},
