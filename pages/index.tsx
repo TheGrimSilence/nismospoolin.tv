@@ -48,8 +48,8 @@ const Home: NextPage = () => {
 						<h3 className='text-5xl font-semibold'>Every Day at 11AM</h3>
 						<p className='mt-8'>
 							With these hours it has never been easier to watch your favorite
-							streamer so hit that \"Follow\" button, grab a drink and a snack
-							and be entertained all day!
+							streamer so hit that Follow button, grab a drink and a snack and
+							be entertained all day!
 						</p>
 						<p className='mt-4'>So go, go do that!</p>
 					</div>
