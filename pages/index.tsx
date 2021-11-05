@@ -2,8 +2,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Card from '../components/Card';
+import Container from '../components/Container';
 import Header from '../components/Header';
-import styles from '../styles/Home.module.css';
+import Hero from '../components/Hero';
 
 const Home: NextPage = () => {
 	return (
@@ -16,24 +17,110 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
 			<Header />
+			<Hero />
+			<Container flex>
+				<div className='flex justify-around w-full py-4 filter grayscale opacity-30'>
+					<div>
+						<Image src='/humble.svg' height='100' width='150' />
+					</div>
+					<div>
+						<Image src='/xidax.svg' height='100' width='150' />
+					</div>
+				</div>
+			</Container>
+			{/* <div>next stream if available</div> */}
+			<Container>
+				<div className='grid grid-cols-3 gap-2 py-4 px-20'>
+					<div className='col-span-2 justify-center'>
+						<div className='relative object-center object-cover h-80 w-2/3 filter drop-shadow-xl mx-auto'>
+							<Image
+								src='/nismospoolin-gaming.png'
+								height='400'
+								width='400'
+								layout='fill'
+								objectFit='cover'
+								className='rounded-3xl'
+							/>
+						</div>
+					</div>
+					<div className='flex-col px-4 h-full'>
+						<h2 className='text-lg font-normal'>New Videos</h2>
+						<h3 className='text-5xl font-semibold'>Every Day at 11AM</h3>
+						<p className='mt-8'>
+							With these hours it has never been easier to watch your favorite
+							streamer so hit that "Follow" button, grab a drink and a snack and
+							be entertained all day!
+						</p>
+						<p className='mt-4'>So go, go do that!</p>
+					</div>
+				</div>
+			</Container>
+			{/* <div>a little about the channel</div> */}
+			{/* <div>top games if available?</div> */}
+			<Container>
+				<div className='my-16'>
+					<h2 className='font-bold text-6xl'>Recent Categories</h2>
+					<div className='grid grid-cols-5 gap-8 px-4 font-semibold mt-12'>
+						<div className=''>
+							<Image
+								src='/new-world_285x380.jpeg'
+								height='380'
+								width='285'
+								layout='intrinsic'
+							/>
+							<p className='mt-2'>New World</p>
+						</div>
 
-			<Card />
-			<div className='h-screen'></div>
+						<div className=''>
+							<Image
+								src='/chatting_285x380.jpeg'
+								height='380'
+								width='285'
+								layout='intrinsic'
+							/>
+							<p className='mt-2'>Just Chatting</p>
+						</div>
+						<div className=''>
+							<Image
+								src='/battlefield_285x380.jpeg'
+								height='380'
+								width='285'
+								layout='intrinsic'
+							/>
+							<p className='mt-2'>Battlefield 2042</p>
+						</div>
+						<div className=''>
+							<Image
+								src='/diablo-2_285x380.jpeg'
+								height='380'
+								width='285'
+								layout='intrinsic'
+							/>
+							<p className='mt-2'>Diablo II: Resurrected</p>
+						</div>
+						<div className=''>
+							<Image
+								src='/old-school-runescape_285x380.jpeg'
+								height='380'
+								width='285'
+								layout='intrinsic'
+							/>
+							<p className='mt-2'>Old School RuneScape</p>
+						</div>
+					</div>
+				</div>
+			</Container>
+			{/* <div>featured streams</div> */}
+			{/* <div>twitter feed horizontal</div> */}
 
-			<footer className={styles.footer}>
-				<a
-					href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-					target='_blank'
-					rel='noopener noreferrer'
-				>
-					Powered by{' '}
-					<span className={styles.logo}>
-						<Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-					</span>
-				</a>
-			</footer>
+			{/* subscribe */}
+			{/* youtube and twitch links */}
+			{/* donate */}
+			{/* about */}
+			{/* contact */}
+
+			{/* sponsors */}
 		</>
 	);
 };

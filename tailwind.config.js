@@ -5,15 +5,28 @@ module.exports = {
 		fontFamily: {
 			roboto: ['Roboto'],
 		},
-
+		container: {
+			center: true,
+		},
+		backgroundImage: {
+			nismospoolin: "url('/background.svg')",
+		},
 		extend: {
 			maxWidth: {
 				'8xl': '90rem',
+			},
+			height: {
+				hero: '50vh',
+			},
+			colors: {
+				primary: '#422c5a',
+				secondary: '#1f0b36',
+				accent: '#65c121',
 			},
 		},
 	},
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/aspect-ratio')],
 };

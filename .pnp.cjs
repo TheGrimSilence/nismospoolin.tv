@@ -214,6 +214,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:4.0.6"
       ],
       [
+        "@tailwindcss/aspect-ratio",
+        "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:0.3.0"
+      ],
+      [
         "@tootallnate/once",
         "npm:1.1.2"
       ],
@@ -1846,6 +1850,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:17.0.2"
       ],
       [
+        "react-icons",
+        "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:4.3.1"
+      ],
+      [
         "react-is",
         "npm:16.13.1"
       ],
@@ -2305,16 +2313,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@headlessui/react", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:1.4.1"],
             ["@heroicons/react", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:1.0.5"],
+            ["@tailwindcss/aspect-ratio", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:0.3.0"],
             ["@types/node", "npm:16.11.6"],
             ["@types/react", "npm:17.0.33"],
             ["@yarnpkg/pnpify", "npm:3.1.1-rc.1"],
             ["autoprefixer", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:10.4.0"],
+            ["encoding", "npm:0.1.13"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:12.0.1"],
             ["next", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:12.0.1"],
             ["postcss", "npm:8.3.11"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:17.0.2"],
+            ["react-icons", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:4.3.1"],
             ["tailwindcss", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:2.2.19"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"]
           ],
@@ -2876,6 +2887,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@szmarczak/http-timer", "npm:4.0.6"],
             ["defer-to-connect", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@tailwindcss/aspect-ratio", [
+        ["npm:0.3.0", {
+          "packageLocation": "./.yarn/cache/@tailwindcss-aspect-ratio-npm-0.3.0-d98bba67d0-f863da71ba.zip/node_modules/@tailwindcss/aspect-ratio/",
+          "packageDependencies": [
+            ["@tailwindcss/aspect-ratio", "npm:0.3.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:0.3.0", {
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-aspect-ratio-virtual-e87b087f45/0/cache/@tailwindcss-aspect-ratio-npm-0.3.0-d98bba67d0-f863da71ba.zip/node_modules/@tailwindcss/aspect-ratio/",
+          "packageDependencies": [
+            ["@tailwindcss/aspect-ratio", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:0.3.0"],
+            ["@types/tailwindcss", null],
+            ["tailwindcss", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:2.2.19"]
+          ],
+          "packagePeers": [
+            "@types/tailwindcss",
+            "tailwindcss"
           ],
           "linkType": "HARD",
         }]
@@ -7055,16 +7088,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["nismospoolin.tv", "workspace:."],
             ["@headlessui/react", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:1.4.1"],
             ["@heroicons/react", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:1.0.5"],
+            ["@tailwindcss/aspect-ratio", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:0.3.0"],
             ["@types/node", "npm:16.11.6"],
             ["@types/react", "npm:17.0.33"],
             ["@yarnpkg/pnpify", "npm:3.1.1-rc.1"],
             ["autoprefixer", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:10.4.0"],
+            ["encoding", "npm:0.1.13"],
             ["eslint", "npm:7.32.0"],
             ["eslint-config-next", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:12.0.1"],
             ["next", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:12.0.1"],
             ["postcss", "npm:8.3.11"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:17.0.2"],
+            ["react-icons", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:4.3.1"],
             ["tailwindcss", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:2.2.19"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"]
           ],
@@ -8023,6 +8059,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["object-assign", "npm:4.1.1"],
             ["react", "npm:17.0.2"],
             ["scheduler", "npm:0.20.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-icons", [
+        ["npm:4.3.1", {
+          "packageLocation": "./.yarn/cache/react-icons-npm-4.3.1-46cb955834-2cc608acdd.zip/node_modules/react-icons/",
+          "packageDependencies": [
+            ["react-icons", "npm:4.3.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:4.3.1", {
+          "packageLocation": "./.yarn/__virtual__/react-icons-virtual-05a2438a18/0/cache/react-icons-npm-4.3.1-46cb955834-2cc608acdd.zip/node_modules/react-icons/",
+          "packageDependencies": [
+            ["react-icons", "virtual:53536aca4666f77ffe497adfa818cba4b971e660b7a247c698c6c4cee26db2a8e4df394950bf5d583d8ea033cf344b39d690cad4b9098033255b74955749d9b2#npm:4.3.1"],
+            ["@types/react", "npm:17.0.33"],
+            ["react", "npm:17.0.2"]
           ],
           "packagePeers": [
             "@types/react",
