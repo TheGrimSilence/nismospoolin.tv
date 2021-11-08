@@ -26,7 +26,7 @@ module.exports = {
 		},
 	},
 	variants: {
-		extend: {},
+		extend: { contrast: ['hover', 'focus'] },
 	},
 	plugins: [require('@tailwindcss/aspect-ratio')],
 };

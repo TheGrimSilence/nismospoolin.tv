@@ -30,9 +30,9 @@ const Home: NextPage = () => {
 			</Container>
 			{/* <div>next stream if available</div> */}
 			<Container>
-				<div className='grid grid-cols-3 gap-2 py-4 px-20'>
-					<div className='col-span-2 justify-center'>
-						<div className='relative object-center object-cover h-80 w-2/3 filter drop-shadow-xl mx-auto'>
+				<div className='grid grid-cols-2 lg:grid-cols-3 gap-2 py-4 lg:px-20'>
+					<div className='lg:col-span-2 justify-center my-auto'>
+						<div className='relative object-center object-cover h-60 lg:h-80 lg:w-2/3 filter drop-shadow-xl mx-auto'>
 							<Image
 								src='/nismospoolin-gaming.png'
 								height='400'
@@ -45,8 +45,10 @@ const Home: NextPage = () => {
 					</div>
 					<div className='flex-col px-4 h-full'>
 						<h2 className='text-lg font-normal'>New Videos</h2>
-						<h3 className='text-5xl font-semibold'>Every Day at 11AM</h3>
-						<p className='mt-8'>
+						<h3 className='text-3xl lg:text-5xl font-semibold'>
+							Every Day at 11AM
+						</h3>
+						<p className='mt-4 lg:mt-8'>
 							With these hours it has never been easier to watch your favorite
 							streamer so hit that Follow button, grab a drink and a snack and
 							be entertained all day!
@@ -59,8 +61,8 @@ const Home: NextPage = () => {
 			{/* <div>top games if available?</div> */}
 			<Container>
 				<div className='my-16'>
-					<h2 className='font-bold text-6xl'>Recent Categories</h2>
-					<div className='grid grid-cols-5 gap-8 px-4 font-semibold mt-12'>
+					<h2 className='font-bold text-3xl lg:text-6xl'>Recent Categories</h2>
+					<div className='grid grid-cols-2 lg:grid-cols-5 gap-8 px-4 font-semibold mt-12'>
 						<div className=''>
 							<Image
 								src='/new-world_285x380.jpeg'

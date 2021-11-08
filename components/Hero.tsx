@@ -11,7 +11,7 @@ const Hero: FunctionComponent = ({ children }) => {
 					<p className='text-5xl my-4'>Nismo<span className='text-accent'>spoolin</span></p>
 					<p>Join me every morning at 11AM on Twitch and join the fun!</p>
 					<div className='flex'>
-						<a className='bg-accent text-white rounded-sm py-4 px-20 inline mt-10'>
+						<a className='bg-accent filter contrast-100 hover:contrast-125 text-white rounded-sm py-4 px-20 inline mt-10' href='https://www.twitch.tv/nismospoolin'>
 							<BsTwitch className='inline' /> Subscribe
 						</a>
 					</div>

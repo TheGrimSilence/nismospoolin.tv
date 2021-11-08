@@ -8,11 +8,11 @@ const Footer: FunctionComponent = ({ children }) => {
 	return (
 		<>
 			<div className='bg-primary px-20 py-8 text-gray-400'>
-				<div className='grid grid-cols-6  pt-16 pb-16'>
-					<div className='flex justify-start'>
+				<div className='grid grid-cols-2 lg:grid-cols-6 grid-flow-row auto-rows-max pt-16 pb-16'>
+					<div className='flex justify-center md:justify-start col-span-2 lg:col-span-1 mb-8 lg:mb-0'>
 						<div className='flex-shrink-0 flex items-center'>
 							<img
-								className='block lg:hidden h-16 w-auto border-accent border-solid border'
+								className='block lg:hidden h-16 w-auto border-accent border-solid border rounded'
 								src='/nismospoolin.svg'
 								alt='Workflow'
 							/>
@@ -40,7 +40,7 @@ const Footer: FunctionComponent = ({ children }) => {
 							<a className='hover:text-gray-100'>About</a>
 						</Link>
 					</div>
-					<div className='flex flex-col justify-around pl-2'>
+					<div className='flex flex-col justify-around pl-2 mt-4 lg:mt=0'>
 						<Link href='/contact'>
 							<a className='hover:text-gray-100'>Contact</a>
 						</Link>
@@ -48,8 +48,8 @@ const Footer: FunctionComponent = ({ children }) => {
 							<a className='hover:text-gray-100'>Shop</a>
 						</Link>
 					</div>
-					<div className='col-span-2'>
-						<a className='bg-accent text-white rounded-sm py-4 px-12 inline mt-4 uppercase'>
+					<div className='col-span-2 md:col-span-2 pt-8'>
+						<a className='bg-accent text-white rounded-sm py-4 px-4 md:px-12 inline mt-4 uppercase text-xs'>
 							<BsTwitch className='inline' /> Subscribe to my channel!
 						</a>
 						<p className='mt-8'>
