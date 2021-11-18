@@ -31,7 +31,7 @@ class CustomDocument extends Document {
 					/>
 					<link rel='icon' type='image/png' href='/assets/images/favicon.png' />
 				</Head>
-				<body>
+				<body className='dark:bg-gray-900' >
 					<Main />
 					<NextScript />
 					<Footer />

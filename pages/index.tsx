@@ -19,11 +19,11 @@ const Home: NextPage = () => {
 			<Header />
 			<Hero />
 			<Container flex>
-				<div className='flex justify-around w-full py-4 filter grayscale opacity-30'>
+				<div className='flex justify-around w-full py-4 filter grayscale opacity-30 dark:invert dark:opacity-70'>
 					<div>
 						<Image src='/humble.svg' height='100' width='150' />
 					</div>
-					<div>
+					<div className=''>
 						<Image src='/xidax.svg' height='100' width='150' />
 					</div>
 				</div>
@@ -35,8 +35,8 @@ const Home: NextPage = () => {
 						<div className='relative object-center object-cover h-60 lg:h-80 lg:w-2/3 filter drop-shadow-xl mx-auto'>
 							<Image
 								src='/nismospoolin-gaming.png'
-								height='400'
-								width='400'
+								// height='400'
+								// width='400'
 								layout='fill'
 								objectFit='cover'
 								className='rounded-3xl'
