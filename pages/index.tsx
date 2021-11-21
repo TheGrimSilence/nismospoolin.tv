@@ -5,6 +5,17 @@ import Container from '../components/Container';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 
+const sponsors: { name: string; logo: string }[] = [
+	{
+		name: 'Xidax',
+		logo: '/xidax.svg',
+	},
+	{
+		name: 'Humble',
+		logo: 'humble.svg',
+	},
+];
+
 const Home: NextPage = () => {
 	return (
 		<>
@@ -16,18 +27,22 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Header />
+			<Header disableBreadcrumbs />
 			<Hero />
-			<Container flex>
-				<div className='flex justify-around w-full py-4 filter grayscale opacity-30 dark:invert dark:opacity-70'>
-					<div>
-						<Image src='/humble.svg' height='100' width='150' />
-					</div>
-					<div className=''>
-						<Image src='/xidax.svg' height='100' width='150' />
+			<div className='filter grayscale opacity-30 dark:opacity-70 dark:invert'>
+				<div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8'>
+					<div className='grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-2'>
+						{sponsors.map((sponsor) => (
+							<div
+								key={sponsor.name}
+								className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1'
+							>
+								<img className='h-12' src={sponsor.logo} alt={sponsor.name} />
+							</div>
+						))}
 					</div>
 				</div>
-			</Container>
+			</div>
 			{/* <div>next stream if available</div> */}
 			<Container>
 				<div className='grid grid-cols-2 lg:grid-cols-3 gap-2 py-4 lg:px-20'>
