@@ -49,6 +49,7 @@ const Home: NextPage = () => {
 					<div className='lg:col-span-2 justify-center my-auto'>
 						<div className='relative object-center object-cover h-60 lg:h-80 lg:w-2/3 filter drop-shadow-xl mx-auto'>
 							<Image
+								alt='Nismospoolin Gaming'
 								src='/nismospoolin-gaming.png'
 								// height='400'
 								// width='400'
@@ -80,6 +81,7 @@ const Home: NextPage = () => {
 					<div className='grid grid-cols-2 lg:grid-cols-5 gap-8 px-4 font-semibold mt-12'>
 						<div className=''>
 							<Image
+								alt='New World'
 								src='/new-world_285x380.jpeg'
 								height='380'
 								width='285'
@@ -90,6 +92,7 @@ const Home: NextPage = () => {
 
 						<div className=''>
 							<Image
+								alt='Chatting'
 								src='/chatting_285x380.jpeg'
 								height='380'
 								width='285'
@@ -99,6 +102,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className=''>
 							<Image
+								alt='Battlefield 2042'
 								src='/battlefield_285x380.jpeg'
 								height='380'
 								width='285'
@@ -108,6 +112,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className=''>
 							<Image
+								alt='Diablo 2'
 								src='/diablo-2_285x380.jpeg'
 								height='380'
 								width='285'
@@ -117,6 +122,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className=''>
 							<Image
+								alt='Old School RuneScape'
 								src='/old-school-runescape_285x380.jpeg'
 								height='380'
 								width='285'

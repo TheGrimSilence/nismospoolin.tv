@@ -66,86 +66,89 @@ const About = () => {
 		<>
 			<Header />
 			{/* <Container> */}
-				<div className='grid grid-cols-1 lg:grid-cols-3'>
-					<div className='lg:col-span-2'>
-						<div className='hidden'>
-							<h2>Hardware</h2>
-							<ul>
-								<li></li>
-							</ul>
-						</div>
-						<div className='bg-gray-50'>
-							<div className='max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8'>
-								<div className='max-w-3xl mx-auto divide-y-2 divide-gray-200'>
-									<h2 className='text-center text-3xl font-extrabold text-gray-900 sm:text-4xl'>
-										Frequently Asked Questions
-									</h2>
-									<dl className='mt-6 space-y-6 divide-y divide-gray-200'>
-										{faqs.map((faq) => (
-											<Disclosure as='div' key={faq.question} className='pt-6'>
-												{({ open }) => (
-													<>
-														<dt className='text-lg'>
-															<Disclosure.Button className='text-left w-full flex justify-between items-start text-gray-400'>
-																<span className='font-medium text-gray-900'>
-																	{faq.question}
-																</span>
-																<span className='ml-6 h-7 flex items-center'>
-																	<ChevronDownIcon
-																		className={classNames(
-																			open ? '-rotate-180' : 'rotate-0',
-																			'h-6 w-6 transform'
-																		)}
-																		aria-hidden='true'
-																	/>
-																</span>
-															</Disclosure.Button>
-														</dt>
-														<Disclosure.Panel as='dd' className='mt-2 pr-12'>
-															<p className='text-base text-gray-500'>
-																{HtmlParser(faq.answer)}
-															</p>
-														</Disclosure.Panel>
-													</>
-												)}
-											</Disclosure>
-										))}
-									</dl>
-								</div>
-							</div>
-						</div>
+			<div className='grid grid-cols-1 lg:grid-cols-3'>
+				<div className='lg:col-span-2'>
+					<div className='hidden'>
+						<h2>Hardware</h2>
+						<ul>
+							<li></li>
+						</ul>
 					</div>
-					<div>
-						<div className='bg-gray-50 overflow-hidden '>
-							<div className='px-4 py-5 sm:px-6'>
+					<div className='bg-gray-50'>
+						<div className='max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8'>
+							<div className='max-w-3xl mx-auto divide-y-2 divide-gray-200'>
 								<h2 className='text-center text-3xl font-extrabold text-gray-900 sm:text-4xl'>
-									Channel Info
+									Frequently Asked Questions
 								</h2>
-								<p className='py-6 text-gray-800'>
-									Hi! I'm Niel, AKA Nismospoolin. I try to stream every day at
-									11AM EST.
-								</p>
+								<dl className='mt-6 space-y-6 divide-y divide-gray-200'>
+									{faqs.map((faq) => (
+										<Disclosure as='div' key={faq.question} className='pt-6'>
+											{({ open }) => (
+												<>
+													<dt className='text-lg'>
+														<Disclosure.Button className='text-left w-full flex justify-between items-start text-gray-400'>
+															<span className='font-medium text-gray-900'>
+																{faq.question}
+															</span>
+															<span className='ml-6 h-7 flex items-center'>
+																<ChevronDownIcon
+																	className={classNames(
+																		open ? '-rotate-180' : 'rotate-0',
+																		'h-6 w-6 transform'
+																	)}
+																	aria-hidden='true'
+																/>
+															</span>
+														</Disclosure.Button>
+													</dt>
+													<Disclosure.Panel as='dd' className='mt-2 pr-12'>
+														<p className='text-base text-gray-500'>
+															{HtmlParser(faq.answer)}
+														</p>
+													</Disclosure.Panel>
+												</>
+											)}
+										</Disclosure>
+									))}
+								</dl>
 							</div>
-							<dl className='sm:divide-y sm:divide-gray-200'>
-								{infoList.map((item) => (
-									<div className='py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'>
-										<dt className='text-sm font-medium text-gray-500'>
-											{item.term}
-										</dt>
-										<dd className='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 text-right'>
-											{item.detail}
-										</dd>
-									</div>
-								))}
-							</dl>
-						</div>
-						<div>
-							<h2>Stream Rules</h2>
 						</div>
 					</div>
 				</div>
-				{/* Hardware */}
-				{/* Optional stream rules? */}
+				<div>
+					<div className='bg-gray-50 overflow-hidden '>
+						<div className='px-4 py-5 sm:px-6'>
+							<h2 className='text-center text-3xl font-extrabold text-gray-900 sm:text-4xl'>
+								Channel Info
+							</h2>
+							<p className='py-6 text-gray-800'>
+								Hi! I&apos;m Niel, AKA Nismospoolin. I try to stream every day
+								at 11AM EST.
+							</p>
+						</div>
+						<dl className='sm:divide-y sm:divide-gray-200'>
+							{infoList.map((item) => (
+								<div
+									key={item.term}
+									className='py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6'
+								>
+									<dt className='text-sm font-medium text-gray-500'>
+										{item.term}
+									</dt>
+									<dd className='mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 text-right'>
+										{item.detail}
+									</dd>
+								</div>
+							))}
+						</dl>
+					</div>
+					<div>
+						<h2>Stream Rules</h2>
+					</div>
+				</div>
+			</div>
+			{/* Hardware */}
+			{/* Optional stream rules? */}
 			{/* </Container> */}
 		</>
 	);

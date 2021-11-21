@@ -189,16 +189,15 @@ const Header: FunctionComponent<HeaderProps> = ({ ...props }) => {
 					>
 						<li className='flex'>
 							<div className='flex items-center'>
-								<a
-									href='/'
-									className='text-gray-400 hover:text-accent transition-colors'
-								>
-									<HomeIcon
-										className='flex-shrink-0 h-5 w-5'
-										aria-hidden='true'
-									/>
-									<span className='sr-only'>Home</span>
-								</a>
+								<Link href='/'>
+									<a className='text-gray-400 hover:text-accent transition-colors'>
+										<HomeIcon
+											className='flex-shrink-0 h-5 w-5'
+											aria-hidden='true'
+										/>
+										<span className='sr-only'>Home</span>
+									</a>
+								</Link>
 							</div>
 						</li>
 						{pages.map((page) => (
