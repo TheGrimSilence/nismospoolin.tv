@@ -1159,7 +1159,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "htmlparser2",
-        "npm:7.2.0"
+        "npm:3.10.1"
       ],
       [
         "http-cache-semantics",
@@ -3157,8 +3157,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/react-html-parser", "npm:2.0.2"],
             ["@types/htmlparser2", "npm:3.10.3"],
-            ["@types/react", "npm:17.0.35"],
-            ["htmlparser2", "npm:7.2.0"]
+            ["@types/react", "npm:17.0.35"]
           ],
           "linkType": "HARD",
         }]
@@ -5093,13 +5092,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["entities", "npm:2.2.0"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:3.0.1", {
-          "packageLocation": "./.yarn/cache/entities-npm-3.0.1-21eeb201ba-aaf7f12033.zip/node_modules/entities/",
-          "packageDependencies": [
-            ["entities", "npm:3.0.1"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["env-paths", [
@@ -6146,17 +6138,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["entities", "npm:1.1.2"],
             ["inherits", "npm:2.0.4"],
             ["readable-stream", "npm:3.6.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:7.2.0", {
-          "packageLocation": "./.yarn/cache/htmlparser2-npm-7.2.0-ec7c96986f-96563d9965.zip/node_modules/htmlparser2/",
-          "packageDependencies": [
-            ["htmlparser2", "npm:7.2.0"],
-            ["domelementtype", "npm:2.2.0"],
-            ["domhandler", "npm:4.2.2"],
-            ["domutils", "npm:2.8.0"],
-            ["entities", "npm:3.0.1"]
           ],
           "linkType": "HARD",
         }]
