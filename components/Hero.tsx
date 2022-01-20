@@ -5,7 +5,7 @@ import { BsTwitch } from 'react-icons/bs';
 
 const Hero: FunctionComponent = ({ children }) => {
 	return (
-		<div className='-mx-2 relative h-hero bg-nismospoolin bg-no-repeat bg-scroll bg-center bg-cover overflow-hidden flex px-8'>
+		<div className='-mx-2 relative h-hero bg-nismospoolin bg-no-repeat bg-scroll bg-center bg-cover overflow-hidden flex px-8 -z-10'>
 			<Container flex>
 				<div className='flex flex-col flex-grow justify-center text-gray-300'>
 					<p className='text-5xl my-4'>
